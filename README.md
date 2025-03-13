@@ -14,7 +14,7 @@ Install java 17
 
 Install Jekins
 
-instll trivy --- if required
+instll trivy wherever jenkins is running --- if required 
 
 sudo apt-get install wget apt-transport-https gnupg lsb-release
 
@@ -34,14 +34,23 @@ sudo chmod 666 /var/run/docker.sock
 # IN Nexus - install docker
 # Create nuxus using docker
 sudo docker run -d -p 8081:8081 sonatype/nexus3
+
 Sign in to nexus 
+
 username = admin
+
 get password login in to nuxus docker
+
 sudo docker exec -it cont-id /bin/bash
+
 cd sonartype-work
+
 cd nexus3
+
 cat admin.password
+
 do not copy bash 
+
 enable aonyms acces
 
 # In SOnaqube - install docker
@@ -51,6 +60,8 @@ login
 username = admin
 password = admin
 Generate token in sonarqube
+
+COnfigure sonarqube server in jenkins
 
 # IN JENKINS instll pluggins
 1. sonarqube-scanner
@@ -66,7 +77,7 @@ Generate token in sonarqube
 11. eclipse temurin installer
 12. pipeline.stage view
     
-# Configure tools
+# Configure tools in JENKINS
 1. Docker
    Name
    install auto
@@ -81,12 +92,24 @@ Generate token in sonarqube
    select ver 17
 # Create project with pipeline and write pipeline
 # While writing pipeline whichever tools we are going to use we have define in pipeline
-# Tools name should give same as when created in tools
-# CRedentions can be created in credentioal section for git (if private), docker, sonarqube, neuxs etc
  pipeline{
    agent any
    tools{
    jdk 'jdk17'
    maven 'maven3'
    }
+# Tools name should give same as when created in tools
+# CRedentions can be created in credentioal section for git (if private), docker, sonarqube, neuxs etc
+# Add sonarqube credentials and add server in system (jenkins)
+name
+
+Sonarqube URL
+
+Select sonarqube Token(cred)
+
+# IN order to publish our artifacts to nexus
+1. Jenkins should be able to comm with nuxus
+2. Cred and URL of nexus should be available to jenkins
+3. Add URL in pom.xml
+4. go to nexus -->  browse --> copy maven releases and maven snapshots ---> paste in URL added in pom.xml
    
