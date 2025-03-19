@@ -96,13 +96,18 @@ COnfigure sonarqube server in jenkins
    select ver 17
 # Create project with pipeline and write pipeline
 # While writing pipeline whichever tools we are going to use we have define in pipeline
+# Name in pipeline here should give same as when created in tools
+
  pipeline{
+ 
    agent any
+   
    tools{
+   
    jdk 'jdk17'
+   
    maven 'maven3'
    }
-# Tools name should give same as when created in tools
 # CRedentions can be created in credentioal section for git (if private), docker, sonarqube, neuxs etc
 # Add sonarqube credentials and add server in system (jenkins)
 name
