@@ -108,6 +108,7 @@ COnfigure sonarqube server in jenkins
    
    maven 'maven3'
    }
+# Add groovy script in pipeline
 # CRedentions can be created in credentioal section for git (if private), docker, sonarqube, neuxs etc
 # Add sonarqube credentials and add server in system (jenkins)
 name
