@@ -56,9 +56,13 @@ enable aonyms acces
 # In SOnaqube - install docker
 # Create sonarqube using docker  - free community version
 sudo docker run -d -p 9000:9000 sonarqube:lts-community
+
 login 
+
 username = admin
+
 password = admin
+
 Generate token in sonarqube
 
 COnfigure sonarqube server in jenkins
