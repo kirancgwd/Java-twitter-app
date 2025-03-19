@@ -32,7 +32,7 @@ sudo chmod 666 /var/run/docker.sock
 # Login to jenkins after installing pluggins
 
 # IN Nexus - install docker
-# Create nuxus using docker
+# Create nexus using docker
 sudo docker run -d -p 8082:8082 sonatype/nexus3
 
 Sign in to nexus 
@@ -118,7 +118,10 @@ Select sonarqube Token(cred)
 
 # IN order to publish our artifacts to nexus
 1. Jenkins should be able to comm with nuxus
-2. Cred and URL of nexus should be available to jenkins
-3. Add URL in pom.xml
-4. go to nexus -->  browse --> copy maven releases and maven snapshots ---> paste in URL added in pom.xml
+   
+3. Cred and URL of nexus should be available to jenkins
+   
+5. Add URL in pom.xml
+   
+7. go to nexus -->  browse --> copy maven releases and maven snapshots ---> paste in URL added in pom.xml
    
