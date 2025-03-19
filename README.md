@@ -1,4 +1,4 @@
-# FullStack-Blogging-App
+# Java-twitter-App
 # Create 2 server for Sonarqube and Nexus 
 instance = t2.medium
 memory  = 20GB
