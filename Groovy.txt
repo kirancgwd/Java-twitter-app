@@ -57,5 +57,10 @@ pipeline {
                }
             
         }
+         stage('Docker Image Scan') {
+            steps {
+               sh "trivy image kiranpkdocker/twitter-app:latest "
+            }
+        }
     }
 }
