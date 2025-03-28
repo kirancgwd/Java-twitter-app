@@ -4,16 +4,15 @@ instance = t2.targe
 memory  = 40GB
 
 **1\.Update all system**
+
 apt-get update
 
-**2\. In JENKINS  - type java it will command to install java**
 
 **Install java 17**
 
 sudo apt install openjdk-17-jdk
 
-
-Install Jekins
+**Install Jekins**
 
 instll trivy wherever jenkins is running --- if required 
 
