@@ -87,6 +87,7 @@ cat admin.password
 
 Capy password (do not copy bash) 
 
+
 **8\. Create sonarqube using docker  - free community version**
 
 sudo docker run -d -p 9000:9000 sonarqube:lts-community
@@ -100,8 +101,9 @@ password = admin
 Generate token in sonarqube
 
 COnfigure sonarqube server in jenkins
+**9\. Add credentions for git (if private), docker, sonarqube in credentials section in Jenkins**
     
-**9\. Configure tools in JENKINS**
+**10\. Configure tools in JENKINS**
 
 1. JDK
 2. Docker
@@ -117,15 +119,13 @@ COnfigure sonarqube server in jenkins
 2. Tools name in pipeline should be give same as when defining in tools
 
 **Add groovy script in pipeline**
-**Add credentions for git (if private), docker, sonarqube in credentials section in Jenkins**
+
 **Add sonarqube server jenkins system**
 
-# IN order to publish our artifacts to nexus
+**IN order to publish our artifacts to nexus**
+
 1. Jenkins should be able to comm with nuxus
-   
 3. Cred and URL of nexus should be available to jenkins
-   
-5. Add URL in pom.xml
-   
+5. Add URL in pom.xml 
 7. go to nexus -->  browse --> copy maven releases and maven snapshots ---> paste in URL added in pom.xml
    
