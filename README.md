@@ -44,7 +44,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 apt-cache policy docker-ce
 ```
 
-# Login to jenkin --> Goto Pluggins --> Install pluggins**
+**Login to jenkin --> Goto Pluggins --> Install pluggins**
 1.sonarqube-scanner
 
 2.Config file provider
@@ -66,15 +66,15 @@ apt-cache policy docker-ce
 10.pipeline.stage view
 
 
-# IN Nexus - install docker
-# Create nexus using docker
+**Create Nexus conatiner using docker image**
+
 sudo docker run -d -p 8082:8082 sonatype/nexus3
 
 Sign in to nexus 
 
 username = admin
 
-get password login in to nuxus docker
+get password by login in to nuxus docker
 
 sudo docker exec -it cont-id /bin/bash
 
@@ -84,12 +84,9 @@ cd nexus3
 
 cat admin.password
 
-do not copy bash 
+Capy password (do not copy bash) 
 
-enable aonyms acces
-
-# In SOnaqube - install docker
-# Create sonarqube using docker  - free community version
+**Create sonarqube using docker  - free community version**
 sudo docker run -d -p 9000:9000 sonarqube:lts-community
 
 login 
