@@ -44,7 +44,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 apt-cache policy docker-ce
 ```
 
-**Login to jenkin --> Goto Pluggins --> Install pluggins**
+**6\. Login to jenkin --> Goto Pluggins --> Install pluggins**
 1.sonarqube-scanner
 
 2.Config file provider
@@ -66,7 +66,7 @@ apt-cache policy docker-ce
 10.pipeline.stage view
 
 
-**Create Nexus conatiner using docker image**
+**7\. Create Nexus conatiner using docker image**
 
 sudo docker run -d -p 8082:8082 sonatype/nexus3
 
@@ -86,7 +86,7 @@ cat admin.password
 
 Capy password (do not copy bash) 
 
-**Create sonarqube using docker  - free community version**
+**8\. Create sonarqube using docker  - free community version**
 sudo docker run -d -p 9000:9000 sonarqube:lts-community
 
 login 
@@ -99,47 +99,20 @@ Generate token in sonarqube
 
 COnfigure sonarqube server in jenkins
 
-# IN JENKINS instll pluggins
-1. sonarqube-scanner
-2. Config file  provider
-3. maven integeration
-4. pipeline maven integration
-5. kubernet
-6. kubernetes client api
-7. kubernetes cred
-8. kubernetes cli
-9. docker
-10. docke pipeline
-11. eclipse temurin installer
-12. pipeline.stage view
-    
-# Configure tools in JENKINS
-1. Docker
-   Name
-   install auto
-   downloan from docker.com
-   latest
-2. maven - lates
-3. Sonarqube
-   sonar_scanner
-4. Add JDK if you want to use different version
-   jdk17
-   install from adoptium
-   select ver 17
-# Create project with pipeline and write pipeline
-# While writing pipeline whichever tools we are going to use we have define in pipeline
-# Name in pipeline here should give same as when created in tools
 
- pipeline{
- 
-   agent any
-   
-   tools{
-   
-   jdk 'jdk17'
-   
-   maven 'maven3'
-   }
+    
+**9\. Configure tools in JENKINS**
+1. JDK
+2. Docker
+3. maven
+4. Sonarqube
+5. OWASP
+
+**10\. Create project with pipeline and write pipeline**
+**Notes**
+1. While writing pipeline whichever tools we are going to use we have define in pipeline
+2. Tools name in pipeline should be give same as when defining in tools
+
 # Add groovy script in pipeline
 # CRedentions can be created in credentioal section for git (if private), docker, sonarqube, neuxs etc
 # Add sonarqube credentials and add server in system (jenkins)
