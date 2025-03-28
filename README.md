@@ -6,7 +6,7 @@ memory  = 40GB
 **1\.Update all system**
 apt-get update
 
-**In JENKINS  - type java it will command to install java**
+**2\. In JENKINS  - type java it will command to install java**
 **Install java 17**
 sudo apt install openjdk-17-jdk
 
