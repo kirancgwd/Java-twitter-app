@@ -45,6 +45,7 @@ apt-cache policy docker-ce
 ```
 
 **6\. Login to jenkin --> Goto Pluggins --> Install pluggins**
+
 1.sonarqube-scanner
 
 2.Config file provider
@@ -87,6 +88,7 @@ cat admin.password
 Capy password (do not copy bash) 
 
 **8\. Create sonarqube using docker  - free community version**
+
 sudo docker run -d -p 9000:9000 sonarqube:lts-community
 
 login 
@@ -98,10 +100,9 @@ password = admin
 Generate token in sonarqube
 
 COnfigure sonarqube server in jenkins
-
-
     
 **9\. Configure tools in JENKINS**
+
 1. JDK
 2. Docker
 3. maven
@@ -109,18 +110,15 @@ COnfigure sonarqube server in jenkins
 5. OWASP
 
 **10\. Create project with pipeline and write pipeline**
+
 **Notes**
+
 1. While writing pipeline whichever tools we are going to use we have define in pipeline
 2. Tools name in pipeline should be give same as when defining in tools
 
-# Add groovy script in pipeline
-# CRedentions can be created in credentioal section for git (if private), docker, sonarqube, neuxs etc
-# Add sonarqube credentials and add server in system (jenkins)
-name
-
-Sonarqube URL
-
-Select sonarqube Token(cred)
+**Add groovy script in pipeline**
+**Add credentions for git (if private), docker, sonarqube in credentials section in Jenkins**
+**Add sonarqube server jenkins system**
 
 # IN order to publish our artifacts to nexus
 1. Jenkins should be able to comm with nuxus
