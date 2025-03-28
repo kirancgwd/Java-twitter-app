@@ -44,9 +44,27 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 apt-cache policy docker-ce
 ```
 
-sudo chmod 666 /var/run/docker.sock
+# Login to jenkin --> Goto Pluggins --> Install pluggins**
+1.sonarqube-scanner
 
-# Login to jenkins after installing pluggins
+2.Config file provider
+
+3.maven integeration
+
+4.pipeline maven integration maven
+
+5.nexus artifact uploader
+
+6.docker
+
+7.owasp
+
+8.docke pipeline
+
+9.eclipse temurin installer
+
+10.pipeline.stage view
+
 
 # IN Nexus - install docker
 # Create nexus using docker
