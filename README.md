@@ -22,7 +22,7 @@ sudo apt-get install jenkins
 sudo systemctl start jenkins
 ```
 
-instll trivy wherever jenkins is running --- if required 
+**4\. Install trivy wherever jenkins is running**
 
 sudo apt-get install wget apt-transport-https gnupg lsb-release
 
@@ -35,8 +35,17 @@ sudo apt-get update
 sudo apt-get install trivy
 
 
-# In JENKINS - type docker it will give command to install docker
+**5\. Install the docker**
+```
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+apt-cache policy docker-ce
+```
+
 sudo chmod 666 /var/run/docker.sock
+
 # Login to jenkins after installing pluggins
 
 # IN Nexus - install docker
