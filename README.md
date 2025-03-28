@@ -1,13 +1,13 @@
 # Java-twitter-App
-# Create a Ubuntu server in aws for Jenkins, Sonarqube and Nexus 
+**Create a Ubuntu server in aws for Jenkins, Sonarqube and Nexus** 
 instance = t2.targe
 memory  = 40GB
 
-# Update all system
+**1\.Update all system**
 apt-get update
 
-# In JENKINS  - type java it will command to install java
-*Install java 17*
+**In JENKINS  - type java it will command to install java**
+**Install java 17**
 sudo apt install openjdk-17-jdk
 
 
