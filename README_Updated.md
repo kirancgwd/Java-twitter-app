@@ -115,7 +115,7 @@ Configure the following tools in Jenkins:
 ---
 
 ### **11. Create a Pipeline Project**
-- Write a Declarative pipeline script in .
+- Write a Declarative pipeline script.
 - Ensure tools are defined in the pipeline with names matching the Jenkins configuration.
 
 ---
