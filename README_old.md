@@ -1,6 +1,6 @@
 # Java-twitter-App
 **Create a Ubuntu server in aws for Jenkins, Sonarqube and Nexus** 
-instance = t2.targe
+instance = t2.large
 memory  = 40GB
 
 **1\.Update all system**
